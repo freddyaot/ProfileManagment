@@ -1,4 +1,4 @@
-package com.engim.alfonso.myapplication;
+package com.engim.alfonso.myapplication.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,8 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.engim.alfonso.myapplication.R;
 
 /**
  * Created by Alfonso-LAPTOP on 22/03/2018.

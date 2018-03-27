@@ -1,4 +1,4 @@
-package com.engim.alfonso.myapplication;
+package com.engim.alfonso.myapplication.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.engim.alfonso.myapplication.R;
+import com.engim.alfonso.myapplication.activities.EditProfileActivity;
 
 public class MainActivity extends AppCompatActivity {
 
