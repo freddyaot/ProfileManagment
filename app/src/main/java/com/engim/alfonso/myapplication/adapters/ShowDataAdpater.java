@@ -25,6 +25,7 @@ public class ShowDataAdpater extends BaseAdapter {
     public ShowDataAdpater (Context ctx, ArrayList<Rifornimento> values){
         this.ctx = ctx;
         this.values = values;
+        
     }
 
     @Override

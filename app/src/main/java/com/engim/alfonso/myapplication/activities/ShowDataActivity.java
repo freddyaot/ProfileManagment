@@ -3,10 +3,13 @@ package com.engim.alfonso.myapplication.activities;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
 
 import com.engim.alfonso.myapplication.R;
 import com.engim.alfonso.myapplication.adapters.ShowDataAdpater;
+import com.engim.alfonso.myapplication.adapters.ShowDataRecyclerAdapter;
 import com.engim.alfonso.myapplication.models.Rifornimento;
 
 import java.util.ArrayList;
@@ -17,7 +20,7 @@ import java.util.ArrayList;
 
 public class ShowDataActivity extends AppCompatActivity {
 
-    private ListView myShowDataList;
+    private RecyclerView myShowDataList;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,7 +38,11 @@ public class ShowDataActivity extends AppCompatActivity {
         data.add(r);
         data.add(r);
         data.add(r);
-        ShowDataAdpater adapter = new ShowDataAdpater(getApplicationContext(),data);
+        ShowDataRecyclerAdapter adapter = new ShowDataRecyclerAdapter(getApplicationContext(),data);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        myShowDataList.setLayoutManager(linearLayoutManager);
 
         myShowDataList.setAdapter(adapter);
 
