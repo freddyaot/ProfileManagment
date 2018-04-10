@@ -51,6 +51,7 @@ public class ShowDataAdpater extends BaseAdapter {
             view = li.inflate(R.layout.show_data_list_item,null);
         }
 
+        //commento
         TextView nameText = view.findViewById(R.id.nameBenzinaio);
         TextView priceText = view.findViewById(R.id.price);
 
