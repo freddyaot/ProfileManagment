@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // commento
         toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
 
